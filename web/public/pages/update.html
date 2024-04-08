@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+    <style>
+        .update-form {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+    
+        input[type=text] {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="update-form">
+        <h2>Update Student</h2>
+        <form id="updateForm" action="/update" method="post">
+            <label for="studentId">Enter Student ID to update:</label><br>
+            <input type="text" id="studentId" name="studentId"><br>
+            <label for="newName">New Name:</label><br>
+            <input type="text" id="newName" name="newName"><br>
+            <label for="newMajors">New Majors:</label><br>
+            <input type="text" id="newMajors" name="newMajors"><br>
+            <label for="newProject">New Project:</label><br>
+            <input type="text" id="newProject" name="newProject"><br>
+            <label for="newGrade">New Grade:</label><br>
+            <input type="text" id="newGrade" name="newGrade"><br>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

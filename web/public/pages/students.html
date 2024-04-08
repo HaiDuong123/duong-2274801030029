@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        .post-form {
+            max-width: 500px;
+            margin: left;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        input[type=text], input[type=file] {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-form">
+        <h2>Nhập dữ liệu thông tin học sinh</h2>
+        <form action="/addstudents" method="post">
+            
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" disabled>
+
+            <label for="images">Image:</label><br>
+            <input type="file" id="images" name="images"><br>
+    
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name"><br>
+    
+            <label for="Majors">Majors:</label><br>
+            <input type="text" id="Majors" name="Majors"><br>
+    
+            <label for="Project">Project:</label><br>
+            <input type="text" id="Project" name="Project"><br>
+    
+            <label for="Grade">Grade:</label><br>
+            <input type="text" id="Grade" name="Grade"><br>
+    
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
